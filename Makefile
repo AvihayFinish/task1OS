@@ -22,7 +22,10 @@ encode: encode.c
 decode: decode.c
 	$(CC) $(FLAGS) decode.c -o decode
 
+stshell: stshell.c
+	$(CC) $(FLAGS) stshell.c -o stshell
+
 clean:
-	rm -f *.o cmp copy codecA encode codecB decode
+	rm -f *.o cmp copy codecA encode codecB decode stshell
 
 .PHONY: clean all
